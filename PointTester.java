@@ -22,6 +22,9 @@ public class PointTester {
     System.out.println(eq.classify());
     System.out.println(i.classify());
     System.out.println(s.classify());
+    System.out.println(t.toString());
+    t.setVertex(0, a);
+    System.out.println(t.toString());
   }
 
 }

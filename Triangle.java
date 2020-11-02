@@ -50,4 +50,22 @@ public class Triangle {
     }
   }
 
+  public String toString() {
+    String str = ("v1(" + String.valueOf(v1.getX()) + ", " + String.valueOf(v1.getY()) + ") v2(" + String.valueOf(v2.getX()) + ", " + String.valueOf(v2.getY()) + ") v3(" + String.valueOf(v3.getX()));
+    str = str + ", " + String.valueOf(v3.getY()) + ")";
+    return (str);
+  }
+
+  public void setVertex(int index, Point newP) {
+    if (index == 0) {
+      v1 = newP;
+    }
+    if (index == 1) {
+      v2 = newP;
+    }
+    if (index == 2) {
+      v3 = newP;
+    }
+  }
+
 }
