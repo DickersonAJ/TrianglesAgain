@@ -28,4 +28,26 @@ public class Triangle {
     return (Math.sqrt(s*(s-a)*(s-b)*(s-c)));
   }
 
+  public double round(double d) {
+    d = d * 10000;
+    d = d - (d % 1);
+    d = d / 10000;
+    return d;
+  }
+
+  public String classify() {
+    double s1 = round(v1.distanceTo(v2));
+    double s2 = round(v2.distanceTo(v3));
+    double s3 = round(v3.distanceTo(v1));
+    if ((s1 == s2) && (s1 == s3)) {
+      return ("equilateral");
+    }
+    else if ((s1 == s2) || (s2 == s3) || (s3 == s1)) {
+      return ("isosceles");
+    }
+    else {
+      return ("scalene");
+    }
+  }
+
 }

@@ -16,6 +16,12 @@ public class PointTester {
     Triangle t2 = new Triangle(0, -2, -2, 3, 5, 6);
     System.out.println(t.getArea());
     System.out.println(t2.getArea());
+    Triangle eq = new Triangle(0, 0, 1, 0, .5, .8660254038);
+    Triangle i = new Triangle(0, 0, 1, 0, 0, 1);
+    Triangle s = new Triangle(0, 0, 1, 0, 0, 2);
+    System.out.println(eq.classify());
+    System.out.println(i.classify());
+    System.out.println(s.classify());
   }
 
 }
