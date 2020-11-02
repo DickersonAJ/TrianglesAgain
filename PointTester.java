@@ -9,6 +9,13 @@ public class PointTester {
     System.out.println(a.distanceTo(b));
     System.out.println(a.equals(b));
     System.out.println(a.equals(c));
+    Point d = new Point(0, -2);
+    Point e = new Point(-2, 3);
+    Point f = new Point(5, 6);
+    Triangle t = new Triangle(d, e, f);
+    Triangle t2 = new Triangle(0, -2, -2, 3, 5, 6);
+    System.out.println(t.getArea());
+    System.out.println(t2.getArea());
   }
 
 }
